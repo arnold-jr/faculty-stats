@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="org.scala-lang.modules:scala-xml_2.11:1.0.5" type="repository">
+  <library name="org.scala-lang.modules:scala-xml_2.11:1.0.51" type="repository">
     <properties maven-id="org.scala-lang.modules:scala-xml_2.11:1.0.5" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar!/" />

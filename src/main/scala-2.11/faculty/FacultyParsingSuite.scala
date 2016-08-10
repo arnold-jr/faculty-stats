@@ -1,17 +1,19 @@
-import scala.reflect.{ClassTag, classTag}
-import scala.xml._
-import scala.xml.transform._
-import org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl
-import java.util.regex.{Pattern}
-import net.liftweb.json._
-import net.liftweb.json.JsonDSL._
-import scala.collection.breakOut
-import java.io._
-
+package faculty
 /**
   * Created by joshuaarnold on 8/8/16.
   */
-object FacultyStatsApp {
+
+import common._
+import java.util.regex.Pattern
+
+import net.liftweb.json.JsonDSL._
+import net.liftweb.json._
+
+import scala.collection.breakOut
+import scala.reflect.ClassTag
+import scala.xml._
+
+object FacultyParsingSuite {
   def main(args: Array[String]): Unit = {
     parseXML()
   }
@@ -30,19 +32,11 @@ object FacultyStatsApp {
 
     val jsonLines = meat map(x => Faculty(x)) map (_.getJson())
 
-    outputWriter("tmp/engineeringFaculty.json", jsonLines)(x => x)
+    outputWriter("tmp/engineeringFaculty.json", jsonLines)(x => x.concat("\n"))
 
     jsonLines foreach println
   }
 
-  def outputWriter[T](fName: String, seq: Seq[T])(f: T => String): Unit = {
-    val file = new File(fName)
-    val bw = new BufferedWriter(new FileWriter(file))
-    for (x <- seq) {
-      bw.write(f(x))
-    }
-    bw.close()
-  }
 
 
   object Faculty {
@@ -89,11 +83,9 @@ object FacultyStatsApp {
 
     def getJson(): String = {
       val json =
-        ("faculty" ->
           ("name" -> name) ~
           ("focus" -> focus) ~
           ("nhood" -> nhood)
-          )
 
       compactRender(json)
     }

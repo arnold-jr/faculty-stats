@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="org.apache.spark:spark-mllib_2.11:2.0.0" type="repository">
+  <library name="org.apache.spark:spark-mllib_2.11:2.0.01" type="repository">
     <properties maven-id="org.apache.spark:spark-mllib_2.11:2.0.0" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.11/2.0.0/spark-mllib_2.11-2.0.0.jar!/" />

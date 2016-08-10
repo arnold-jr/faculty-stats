@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="org.ccil.cowan.tagsoup:tagsoup:1.2.1" type="repository">
+  <library name="org.ccil.cowan.tagsoup:tagsoup:1.2.11" type="repository">
     <properties maven-id="org.ccil.cowan.tagsoup:tagsoup:1.2.1" />
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar!/" />
