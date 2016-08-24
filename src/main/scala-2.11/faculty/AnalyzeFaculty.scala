@@ -20,7 +20,8 @@ object AnalyzeFaculty {
 
     SparkContextSingleton.setMaster(args(0))
 
-    synonyms(engrFile)
+    // synonyms(engrFile)
+    predictBigDataUsers()
 
     SparkContextSingleton.stopSparkContext()
   }
@@ -43,7 +44,8 @@ object AnalyzeFaculty {
     // Register the DataFrame as a temporary view
     facultyDF.createOrReplaceTempView("faculty")
 
-    lazy val focusDF = spark.sql("SELECT focus FROM faculty WHERE LENGTH(focus)>0")
+    lazy val focusDF = spark.sql("SELECT focus FROM faculty " +
+      "WHERE LENGTH(focus)>0")
     focusDF.show()
     println(focusDF.count())
 
@@ -80,6 +82,32 @@ object AnalyzeFaculty {
       resultDF take 50)({
       r: Row => r(0) + "," + r(1) + ",\n"
     })
+  }
+
+  def getInt(r: Row): Option[Int] = {
+    try {
+      Some(r.getAs[String](0).toInt)
+    } catch {
+      case e: Exception => None
+    }
+  }
+
+  def predictBigDataUsers() = {
+    val spark = SparkSessionSingleton.getInstance(SparkContextSingleton.conf)
+    lazy val facultyDF = spark.read.json("tmp/allFaculty.json")
+
+    import spark.implicits._
+
+    facultyDF.show()
+    println(facultyDF.count())
+    val sumYears = (facultyDF select "year" map (getInt(_).getOrElse(0)))
+      .filter(x => x != 0)
+      .map (x0 => (x0, 1))
+      .reduce((t1: (Int, Int), t2: (Int, Int))
+      => (t1._1 + t2._1, t1._2 + t2._2)
+      )
+
+    println(sumYears._1.toDouble / sumYears._2.toDouble)
   }
 
 
