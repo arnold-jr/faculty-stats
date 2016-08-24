@@ -5,6 +5,7 @@ package faculty
 
 import common._
 import java.util.regex.Pattern
+import java.io.File
 
 import net.liftweb.json.JsonDSL._
 import net.liftweb.json._
@@ -46,7 +47,8 @@ object FacultyParsingSuite {
               case Seq() => Nil
               case Seq(x, xs@_*) => extract(x) ++ extract(xs)
             }
-            case _ => throw new java.util.InputMismatchException("must be node ")
+            case _ =>
+              throw new java.util.InputMismatchException("must be node ")
           }
         }
 
@@ -77,13 +79,14 @@ object FacultyParsingSuite {
       "/html/engineeringFaculty/engineeringFaculty.html"
     val elem = customParser.xmlToHtml.loadFile(fpath)
 
-    val tables = elem \\ "table" filter (x => (x \ "@id" text) == "peoplelisting")
+    val tables = elem \\ "table" filter
+      (x => (x \ "@id" text) == "peoplelisting")
 
-    val meat = tables \\ "tr" \\ "td" filter (x => x \ "h4" nonEmpty)
+    val columnData = tables \\ "tr" \\ "td" filter (x => x \ "h4" nonEmpty)
 
-    val jsonLines = meat map (x => Faculty(x)) map (_.getJson())
+    val jsonLines = columnData map (x => Faculty(x)) map (_.getJson())
 
-    outputWriter("tmp/engineeringFaculty.json", jsonLines)(x => x.concat("\n"))
+    outputWriter("tmp/engineeringFaculty.json", jsonLines)(x => x)
 
     jsonLines foreach println
   }
@@ -126,14 +129,18 @@ object FacultyParsingSuite {
     }
 
     def extract[T: ClassTag](t: T): Map[String, List[String]] = {
+      val namePattern =
+        "(ctl00_ContentPlaceHolder1_dlFaculty_ctl\\d+_lblName)".r
+      val yearPattern =
+        "(ctl00_ContentPlaceHolder1_dlFaculty_ctl\\d+_Label2)".r
       t match {
         case n: Node => {
           val id = (n \ "@id" text)
           n match {
             case <span>{ s }</span> => id match {
-              case "ctl00_ContentPlaceHolder1_dlFaculty_ctl00_lblName" =>
+              case namePattern(_) =>
                 Map("name" -> List(s.text))
-              case "ctl00_ContentPlaceHolder1_dlFaculty_ctl00_Label2" =>
+              case yearPattern(_) =>
                 Map("year" -> List(s.text))
               case _ =>
                 Map()
@@ -178,7 +185,7 @@ object FacultyParsingSuite {
 
     val jsonLines = rows map parseOuterTable filterNot (_ == "{}")
 
-    outputWriter("tmp/allFaculty.json", jsonLines)(x => x.concat("\n"))
+    jsonLines
   }
 
 
@@ -192,11 +199,16 @@ object FacultyParsingSuite {
   def main(args: Array[String]): Unit = {
     // parseEngineeringFaculty()
 
+    val parentDir = new File("/Users/joshuaarnold/Documents/MyApps/" +
+      "faculty-stats/resources/html/allFaculty/")
 
-    val fpath = "/Users/joshuaarnold/Documents/MyApps/faculty-stats/resources" +
-      "/html/allFaculty/A_names.html"
+    val fpaths = parentDir.listFiles.filter(_.isFile).toList
 
-    parseAllFaculty(fpath)
+    val allJson = fpaths map(fpath =>
+      parseAllFaculty(fpath.getAbsolutePath)) flatten
+
+    outputWriter("tmp/allFaculty.json", allJson)(x => x)
+
   }
 
 
