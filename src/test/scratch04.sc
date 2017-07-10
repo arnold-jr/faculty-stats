@@ -1,14 +1,14 @@
 import java.io.File
 
-val deb = "ctl00_ContentPlaceHolder1_dlFaculty_ctl00_lblName"
+val foo = "ctl00_ContentPlaceHolder1_dlFaculty_ctl00_lblName"
 
 
 val pattern = "(ctl00_ContentPlaceHolder1_dlFaculty_ctl\\d+_lblName)".r
 
-pattern.findFirstIn(deb)
+pattern.findFirstIn(foo)
 
 
-deb match {
+foo match {
   case pattern(_) => "yes"
   case _ => "oh"
 }
