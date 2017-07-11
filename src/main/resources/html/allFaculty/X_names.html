@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Faculty
+</title><meta name="description" content="The Faculty Registry is the document of record that lists faculty members at Vanderbilt University" /><meta name="keywords" content="Faculty Registry, listing, vanderbilt university" /><link rel="stylesheet" type="text/css" href="css/main.css" media="screen" /><link rel="stylesheet" type="text/css" href="css/print.css" media="print" /><link href="css/Registry.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" type="image/png" href="http://www.vanderbilt.edu/favicon.ico" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+<script src="js/IE9.js"></script>
+<link href="css/ie.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+    <!--[if IE 6]>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" media="screen" /><link rel="stylesheet" type="text/css" href="css/vslides-seclevel-ie6.css" />
+<script src="js/pngie.js"></script>
+<![endif]-->
+</head>
+<body id="home">
+    <!-- the top navigation brandbar code -->
+
+    <script type="text/javascript" src="js/vubrandbar.js"></script>
+
+    <!-- end of the brand bar code -->
+    <form name="aspnetForm" method="post" action="FacDetail.aspx?fname=&amp;lname=X&amp;school=0&amp;dept=0" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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bGVzDzwrAAoBCAIBZAUzY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMDAkZ3ZEZWdyZWVzDzwrAAoBCAIBZAUzY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTAkZ3ZEZWdyZWVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTQkZ3ZUaXRsZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwOCRndkRlZ3JlZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwNiRndlRpdGxlcw88KwAKAQgCAWQFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDA4JGd2VGl0bGVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTYkZ3ZUaXRsZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwMiRndlRpdGxlcw88KwAKAQgCAWQFM2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDAyJGd2RGVncmVlcw88KwAKAQgCAWQFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDEyJGd2VGl0bGVzDzwrAAoBCAIBZAUzY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTYkZ3ZEZWdyZWVzDzwrAAoBCAIBZAUzY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTIkZ3ZEZWdyZWVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTAkZ3ZUaXRsZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwMCRndlRpdGxlcw88KwAKAQgCAWQFM2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDA0JGd2RGVncmVlcw88KwAKAQgCAWQFM2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDE0JGd2RGVncmVlcw88KwAKAQgCAWTwN6EW1dR3I8a51XxY8w5tnMgGTg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A752C1C8" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALv6NbKAgKhhvaMDQLl9KXFBALJ2buDDjlFlfvqZBxxjVsfE2G82zm/hDy6" />
+    <div id="content">
+        <a name="top"></a>
+        <div style="text-align:center; width:100%;">
+<img id="ctl00_Image1" src="images/registry.gif" border="0" /><br />&nbsp;<br />
+</div>
+        <div class="container">
+            <div id="seccontent">
+                
+
+
+                <div class="secmain">
+                    <!-- left column navigation links -->
+                    <div class="leftcol">
+                        <h4>
+                            Explore Our Site</h4>
+                        <ul>
+                            <li><a class="last" href="default.aspx">Faculty Registry Home</a></li>
+                            <li><a class="last" href="archive.aspx">Archives</a></li>
+                        </ul>
+                        <h4>
+                            Related Links</h4>
+                        <ul>
+                            <li><a href="http://www.vanderbilt.edu/about/orgchart/">Administrative Organization</a></li>
+                            <li><a href="http://www.vanderbilt.edu/boardoftrust/">Board of Trust</a></li>
+                            <li><a href="http://www.vanderbilt.edu/boardoftrust/cmembers.html">Board of Trust Committees</a></li>
+                            <li><a href="http://www.vanderbilt.edu/facultysenate/">Faculty Senate</a></li></ul>
+                    </div>
+                    <!-- /leftcol -->
+                    <!-- the middle column with the text section -->
+                    <div class="rightcol">
+                        
+        
+    <h3 class="plain">
+        Faculty Registry</h3>
+    <div class="buttons" style="float: left;"><br />
+        <a id="ctl00_ContentPlaceHolder1_btnRegistry" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnRegistry','')">View Registry Format</a>
+        </div>
+    <div  class="buttons1" >
+        <table><tr><td>
+        <a id="ctl00_ContentPlaceHolder1_btnGoBack" class="back" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnGoBack','')">Back to Search Results</a><br />  </td></tr><tr><td>
+        <a id="ctl00_ContentPlaceHolder1_btnNewSearch" class="newsearch" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnNewSearch','')">New Search</a><br />&nbsp;<br /></td></tr></table>
+    </div>
+    <table id="ctl00_ContentPlaceHolder1_dlFaculty" cellspacing="0" border="0">
+	<tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_lblName" class="SectionHead">Xia, Daoxing </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_lblSpecial_Note" class="SectionHead">(On Leave)</span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_Label2">1984</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Professor of Mathematics</td><td>College of Arts &amp; Science</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Doctorate</td><td>Zhejiang University</td><td>Hangzhou, China</td><td>1952</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>Shandong University of Technology</td><td>Zibo, China</td><td>1950</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_lblName" class="SectionHead">Xiang, Zixiu </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_Label2">2006</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Research Assistant Professor of Pharmacology</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Yale University</td><td>New Haven, Connecticut</td><td>1995</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>Fudan University</td><td>Shanghai, China</td><td>1986</td>
+				</tr><tr class="ResultsRow">
+					<td>M.S.</td><td>Fudan University</td><td>Shanghai, China</td><td>1986</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_lblName" class="SectionHead">Xu, Hua </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_Label2">2008</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Adjunct Associate Professor of Biomedical Informatics</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Columbia University</td><td>New York, New York</td><td>2008</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.Phil.</td><td>Columbia University</td><td>New York, New York</td><td>2007</td>
+				</tr><tr class="ResultsRow">
+					<td>M.S.</td><td>New Jersey Institute of Technology</td><td>Newark, New Jersey</td><td>2001</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>Nanjing University of Technology</td><td>Nanjing, China</td><td>1998</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_lblName" class="SectionHead">Xu, Junzhong </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_Label2">2011</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant Professor of Radiology and Radiological Sciences</td><td>School of Medicine</td>
+				</tr><tr class="ResultsAltRow">
+					<td>Assistant Professor of Biomedical Engineering</td><td>School of Engineering</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Vanderbilt University</td><td>Nashville, Tennessee</td><td>2008</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.S.</td><td>Vanderbilt University</td><td>Nashville, Tennessee</td><td>2007</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>University of Science &amp; Technology of China</td><td>Beijing, China</td><td>2002</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_lblName" class="SectionHead">Xu, Shu </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_Label2">2015</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Research Instructor in Biochemistry</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>University of Toledo</td><td>Toledo, Ohio</td><td>2012</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.S.</td><td>Nanjing University</td><td>Nanjing, China</td><td>2007</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>Nanjing University</td><td>Nanjing, China</td><td>2004</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_lblName" class="SectionHead">Xu, Yao </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_Label2">1995</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Research Associate Professor of Biological Sciences</td><td>College of Arts &amp; Science</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Lanzhou University</td><td>Lanzhou, China</td><td>1988</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_lblName" class="SectionHead">Xu, Yaomin </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_Label2">2013</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant Professor of Biostatistics</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Case Western Reserve University</td><td>Cleveland, Ohio</td><td>2008</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.S.</td><td>University of Idaho</td><td>Moscow, Idaho</td><td>2002</td>
+				</tr><tr class="ResultsRow">
+					<td>M.S.</td><td>University of Science &amp; Technology of China</td><td>Anhui, China</td><td>1998</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>University of Science &amp; Technology of China</td><td>Hefei, China</td><td>1994</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_lblName" class="SectionHead">Xu, Yaqiong </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_Label2">2009</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Associate Professor of Electrical Engineering</td><td>School of Engineering</td>
+				</tr><tr class="ResultsAltRow">
+					<td>Assistant Professor of Physics</td><td>College of Arts &amp; Science</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Rice University</td><td>Houston, Texas</td><td>2006</td>
+				</tr><tr class="ResultsAltRow">
+					<td>Ph.D.</td><td>Institute of Physics, Chinese Academy of Sciences</td><td>Beijing, China</td><td>2002</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>Wuhan University</td><td>Wuhan, China</td><td>1997</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_lblName" class="SectionHead">Xue, Yuan </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_lblSpecial_Note" class="SectionHead">(On Leave)</span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_Label2">2005</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Associate Professor of Computer Science and Associate Professor of Computer Engineering</td><td>School of Engineering</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>University of Illinois</td><td>Urbana-Champaign, Illinois</td><td>2005</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.S.</td><td>University of Illinois</td><td>Urbana-Champaign, Illinois</td><td>2002</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>Harbin Institute of Technology</td><td>Harbin, China</td><td>1998</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr>
+</table>
+<br clear="all" />
+                        <div id="VirgLink" class="factbook" >
+                            <a href="https://virg.vanderbilt.edu/VIRGWEB/fb.aspx?show=3" target="_blank"
+                            style="text-decoration:none;color:#3A5FCD;">View Faculty
+                                Statistics in the Vanderbilt Factbook</a> <br />
+                            <span id="ctl00_Label1">To find more information about a Vanderbilt researcher, use the SearchVU tool at the top of this page.</span> </div>
+        <div class="backtotop"><a href="#top" style="text-decoration:none;color:#3A5FCD;">Back to Top</a></div>
+                    </div>
+                    <!-- /rightcol -->
+                </div>
+                <!-- /secmain -->
+            </div>
+            <!-- /seccontent-->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /content -->
+    <!-- footer with contact information -->
+    <div id="footer">
+        <div class="container">
+              <p style="float:left">  &copy; 2010 Vanderbilt University &middot; Nashville, TN 37240 &middot; (615) 322-7311
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.vanderbilt.edu/about/contact/">Site Info</a> &middot; <a href="http://www.vanderbilt.edu/apps">
+                    Go Mobile</a> &middot; More information? Contact <a href="https://virg.vanderbilt.edu/virgweb/default.aspx">
+                        Vanderbilt Institutional Research Group</a></p>
+                       <div style="float:right"><a href="https://virg.vanderbilt.edu" style="color:#999999;text-decoration:none;">Powered by <img src="images/virgsmall.gif" /></a></div>
+        </div>
+    </div>
+    <!-- /footer -->
+    <!-- Patricia, this is Google Analytics code -->
+
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2095171-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+    </script>
+
+    <!-- end of Google Analytics code -->
+    </form>
+</body>
+</html>

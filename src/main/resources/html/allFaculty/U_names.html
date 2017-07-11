@@ -1,0 +1,722 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Faculty
+</title><meta name="description" content="The Faculty Registry is the document of record that lists faculty members at Vanderbilt University" /><meta name="keywords" content="Faculty Registry, listing, vanderbilt university" /><link rel="stylesheet" type="text/css" href="css/main.css" media="screen" /><link rel="stylesheet" type="text/css" href="css/print.css" media="print" /><link href="css/Registry.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" type="image/png" href="http://www.vanderbilt.edu/favicon.ico" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+<script src="js/IE9.js"></script>
+<link href="css/ie.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+    <!--[if IE 6]>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" media="screen" /><link rel="stylesheet" type="text/css" href="css/vslides-seclevel-ie6.css" />
+<script src="js/pngie.js"></script>
+<![endif]-->
+</head>
+<body id="home">
+    <!-- the top navigation brandbar code -->
+
+    <script type="text/javascript" src="js/vubrandbar.js"></script>
+
+    <!-- end of the brand bar code -->
+    <form name="aspnetForm" method="post" action="FacDetail.aspx?fname=&amp;lname=U&amp;school=0&amp;dept=0" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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HgUzY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMjQkZ3ZEZWdyZWVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTgkZ3ZUaXRsZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwMCRndkRlZ3JlZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwxMCRndkRlZ3JlZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwyOCRndkRlZ3JlZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwxNiRndkRlZ3JlZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwMiRndkRlZ3JlZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwOCRndlRpdGxlcw88KwAKAQgCAWQFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDEwJGd2VGl0bGVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMTIkZ3ZUaXRsZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwyMiRndkRlZ3JlZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwOCRndkRlZ3JlZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwyNCRndlRpdGxlcw88KwAKAQgCAWQFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDIyJGd2VGl0bGVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMjAkZ3ZUaXRsZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwNCRndkRlZ3JlZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwxNCRndlRpdGxlcw88KwAKAQgCAWQFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDI2JGd2VGl0bGVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMDQkZ3ZUaXRsZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwMCRndlRpdGxlcw88KwAKAQgCAWQFM2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDI2JGd2RGVncmVlcw88KwAKAQgCAWQFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDA2JGd2VGl0bGVzDzwrAAoBCAIBZAUzY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMjAkZ3ZEZWdyZWVzDzwrAAoBCAIBZAUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbEZhY3VsdHkkY3RsMDIkZ3ZUaXRsZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwwNiRndkRlZ3JlZXMPPCsACgEIAgFkBTNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwxOCRndkRlZ3JlZXMPPCsACgEIAgFkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGRsRmFjdWx0eSRjdGwyOCRndlRpdGxlcw88KwAKAQgCAWQFM2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDE0JGd2RGVncmVlcw88KwAKAQgCAWQFM2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDEyJGd2RGVncmVlcw88KwAKAQgCAWQFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZGxGYWN1bHR5JGN0bDE2JGd2VGl0bGVzDzwrAAoBCAIBZPJCL9cHzuWhYEgWhE+f5jDuBDSo" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A752C1C8" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKtk/KQBwKhhvaMDQLl9KXFBALJ2buDDqq83TIcFNnagusiXcDqJrXkMxzi" />
+    <div id="content">
+        <a name="top"></a>
+        <div style="text-align:center; width:100%;">
+<img id="ctl00_Image1" src="images/registry.gif" border="0" /><br />&nbsp;<br />
+</div>
+        <div class="container">
+            <div id="seccontent">
+                
+
+
+                <div class="secmain">
+                    <!-- left column navigation links -->
+                    <div class="leftcol">
+                        <h4>
+                            Explore Our Site</h4>
+                        <ul>
+                            <li><a class="last" href="default.aspx">Faculty Registry Home</a></li>
+                            <li><a class="last" href="archive.aspx">Archives</a></li>
+                        </ul>
+                        <h4>
+                            Related Links</h4>
+                        <ul>
+                            <li><a href="http://www.vanderbilt.edu/about/orgchart/">Administrative Organization</a></li>
+                            <li><a href="http://www.vanderbilt.edu/boardoftrust/">Board of Trust</a></li>
+                            <li><a href="http://www.vanderbilt.edu/boardoftrust/cmembers.html">Board of Trust Committees</a></li>
+                            <li><a href="http://www.vanderbilt.edu/facultysenate/">Faculty Senate</a></li></ul>
+                    </div>
+                    <!-- /leftcol -->
+                    <!-- the middle column with the text section -->
+                    <div class="rightcol">
+                        
+        
+    <h3 class="plain">
+        Faculty Registry</h3>
+    <div class="buttons" style="float: left;"><br />
+        <a id="ctl00_ContentPlaceHolder1_btnRegistry" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnRegistry','')">View Registry Format</a>
+        </div>
+    <div  class="buttons1" >
+        <table><tr><td>
+        <a id="ctl00_ContentPlaceHolder1_btnGoBack" class="back" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnGoBack','')">Back to Search Results</a><br />  </td></tr><tr><td>
+        <a id="ctl00_ContentPlaceHolder1_btnNewSearch" class="newsearch" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnNewSearch','')">New Search</a><br />&nbsp;<br /></td></tr></table>
+    </div>
+    <table id="ctl00_ContentPlaceHolder1_dlFaculty" cellspacing="0" border="0">
+	<tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_lblName" class="SectionHead">Uddin, MD Imam</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_Label2">2015</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Research Instructor in Ophthalmology and Visual Sciences</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl00_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>&nbsp;</td><td>&nbsp;</td><td>2008</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.S.</td><td>&nbsp;</td><td>&nbsp;</td><td>2002</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>&nbsp;</td><td>&nbsp;</td><td>2000</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_lblName" class="SectionHead">Uddin, Md. Jashim</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_Label2">2005</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Research Associate Professor of Biochemistry</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl02_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Shinshu University</td><td>Nagano, Japan</td><td>2001</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.S.</td><td>University of Dhaka</td><td>Dhaka, Bangladesh</td><td>1993</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>University of Dhaka</td><td>Dhaka, Bangladesh</td><td>1991</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_lblName" class="SectionHead">Ukoli, Flora A. M.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_Label2">2006</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Adjunct Professor of Medicine</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl04_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.P.H.</td><td>University of Pittsburgh</td><td>Pittsburgh, Pennsylvania</td><td>1998</td>
+				</tr><tr class="ResultsAltRow">
+					<td>D.P.H.</td><td>University of Glasgow</td><td>Glasgow, United Kingdom</td><td>1980</td>
+				</tr><tr class="ResultsRow">
+					<td>M.B.B.S.</td><td>University of Ibadan</td><td>Ibadan, Nigeria</td><td>1975</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_lblName" class="SectionHead">Umar, Sait A.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_Label2">1986</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Professor of Physics</td><td>College of Arts &amp; Science</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl06_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Yale University</td><td>New Haven, Connecticut</td><td>1985</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.Phil.</td><td>Yale University</td><td>New Haven, Connecticut</td><td>1985</td>
+				</tr><tr class="ResultsRow">
+					<td>M.S.</td><td>Yale University</td><td>New Haven, Connecticut</td><td>1985</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>Bogazici University</td><td>Istanbul, Turkey</td><td>1979</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_lblName" class="SectionHead">Umeukeje, Ebele </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_Label2">2014</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Instructor in Clinical Medicine</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl08_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.P.H.</td><td>Vanderbilt University</td><td>Nashville, Tennessee</td><td>2015</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.D.</td><td>University of Nigeria</td><td>Nsukka, Nigeria</td><td>2003</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_lblName" class="SectionHead">Umphlett, Leah </span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_Label2">2014</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Clinical Instructor in Pediatrics</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl10_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.D.</td><td>&nbsp;</td><td>&nbsp;</td><td>2008</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>Elon University</td><td>Elon, North Carolina</td><td>2004</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_lblName" class="SectionHead">Underwood, Catherine Lindsey</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_Label2">2016</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant in Psychiatry and Behavioral Sciences</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl12_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.S.</td><td>Yale University</td><td>New Haven, Connecticut</td><td>2012</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.A.</td><td>Lambuth University</td><td>Jackson, Tennessee</td><td>2008</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_lblName" class="SectionHead">Unertl, Kim M.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_Label2">2010</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant Professor of Biomedical Informatics</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl14_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Vanderbilt University</td><td>Nashville, Tennessee</td><td>2009</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.S.</td><td>Vanderbilt University</td><td>Nashville, Tennessee</td><td>2006</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>Marquette University</td><td>Milwaukee, Wisconsin</td><td>1996</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_lblName" class="SectionHead">Unger, Jacob G.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_Label2">2015</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant Clinical Professor of Plastic Surgery</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl16_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.D.</td><td>New York University</td><td>New York, New York</td><td>2009</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>Tulane University</td><td>New Orleans, Louisiana</td><td>2005</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl18_lblName" class="SectionHead">Upender, Raghu P.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl18_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl18_Label2">2011</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl18_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant Professor of Clinical Neurology</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl18_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.D.</td><td>University of Connecticut School of Medicine</td><td>Farmington, Connecticut</td><td>1995</td>
+				</tr><tr class="ResultsAltRow">
+					<td>B.S.</td><td>University of Connecticut</td><td>Stamford, Connecticut</td><td>1990</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_lblName" class="SectionHead">Urbano, Mary  Theresa</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_lblSpecial_Note" class="SectionHead"> (Deceased)</span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_Label2">2005</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Professor of Clinical Pediatrics, Emerita</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Florida State University</td><td>Tallahassee, Florida</td><td>1984</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.P.H.</td><td>University of North Carolina</td><td>Chapel Hill, North Carolina</td><td>1975</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>Florida State University</td><td>Tallahassee, Florida</td><td>1966</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_dlOtherQ" AutoGenerateColumns="false"><span>
+                    <strong>Other Qualifications:&nbsp;</strong>
+                </span><span>
+                    <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_dlOtherQ_ctl01_lblName">PhD;</span>
+                </span><span>
+                    <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_dlOtherQ_ctl02_lblName">MPH;</span>
+                </span><span>
+                    <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_dlOtherQ_ctl03_lblName">BSN;</span>
+                </span><span>
+                    <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_dlOtherQ_ctl04_lblName">RN;</span>
+                </span><span>
+                    <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl20_dlOtherQ_ctl05_lblName">OTHER</span>
+                </span><span>
+                    <br />    <br />
+                </span></span>
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl22_lblName" class="SectionHead">Urbano, Richard C.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl22_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl22_Label2">2003</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl22_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Research Professor of Pediatrics</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl22_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>University of Illinois</td><td>Urbana-Champaign, Illinois</td><td>1970</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.A.</td><td>University of Illinois</td><td>Urbana-Champaign, Illinois</td><td>1968</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.</td><td>Florida State University</td><td>Tallahassee, Florida</td><td>1965</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl24_lblName" class="SectionHead">Uskavitch, David R.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl24_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl24_Label2">2007</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl24_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant Professor of Clinical Neurology</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl24_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.D.</td><td>University of Virginia</td><td>Charlottesville, Virginia</td><td>1987</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.A.T.</td><td>University of Virginia</td><td>Charlottesville, Virginia</td><td>1981</td>
+				</tr><tr class="ResultsRow">
+					<td>B.A.A.</td><td>University of Virginia</td><td>Charlottesville, Virginia</td><td>1980</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl26_lblName" class="SectionHead">Usner, Jr., Daniel H.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl26_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl26_Label2">2002</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl26_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Holland M. McTyeire Professor of History</td><td>College of Arts &amp; Science</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl26_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>Ph.D.</td><td>Duke University</td><td>Durham, North Carolina</td><td>1981</td>
+				</tr><tr class="ResultsAltRow">
+					<td>M.A.</td><td>Duke University</td><td>Durham, North Carolina</td><td>1976</td>
+				</tr><tr class="ResultsRow">
+					<td>B.A.</td><td>Johns Hopkins University</td><td>Baltimore, Maryland</td><td>1975</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr><tr>
+		<td>
+        <hr class="Separator" />
+        </td>
+	</tr><tr>
+		<td>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl28_lblName" class="SectionHead">Utz, Andrea L.</span>
+            <span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl28_lblSpecial_Note" class="SectionHead"></span>
+            <div class="right">
+                <strong>Year Hired:&nbsp;<span id="ctl00_ContentPlaceHolder1_dlFaculty_ctl28_Label2">2009</span></strong></div>
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl28_gvTitles">
+				<caption>
+					Appointments
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Title</th><th scope="col">School</th>
+				</tr><tr class="ResultsRow">
+					<td>Assistant Professor of Medicine</td><td>School of Medicine</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            <div>
+			<table class="ResultsTable" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_dlFaculty_ctl28_gvDegrees">
+				<caption>
+					Education
+				</caption><tr class="ResultsHeader">
+					<th scope="col">Degree</th><th scope="col">Institution</th><th scope="col">Location</th><th scope="col">Year Received</th>
+				</tr><tr class="ResultsRow">
+					<td>M.D.</td><td>Vanderbilt University</td><td>Nashville, Tennessee</td><td>2000</td>
+				</tr><tr class="ResultsAltRow">
+					<td>Ph.D.</td><td>Vanderbilt University</td><td>Nashville, Tennessee</td><td>2000</td>
+				</tr><tr class="ResultsRow">
+					<td>B.S.E.</td><td>Duke University</td><td>Durham, North Carolina</td><td>1992</td>
+				</tr>
+			</table>
+		</div>
+            <br />
+            
+        </td>
+	</tr>
+</table>
+<br clear="all" />
+                        <div id="VirgLink" class="factbook" >
+                            <a href="https://virg.vanderbilt.edu/VIRGWEB/fb.aspx?show=3" target="_blank"
+                            style="text-decoration:none;color:#3A5FCD;">View Faculty
+                                Statistics in the Vanderbilt Factbook</a> <br />
+                            <span id="ctl00_Label1">To find more information about a Vanderbilt researcher, use the SearchVU tool at the top of this page.</span> </div>
+        <div class="backtotop"><a href="#top" style="text-decoration:none;color:#3A5FCD;">Back to Top</a></div>
+                    </div>
+                    <!-- /rightcol -->
+                </div>
+                <!-- /secmain -->
+            </div>
+            <!-- /seccontent-->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /content -->
+    <!-- footer with contact information -->
+    <div id="footer">
+        <div class="container">
+              <p style="float:left">  &copy; 2010 Vanderbilt University &middot; Nashville, TN 37240 &middot; (615) 322-7311
+                <br />&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.vanderbilt.edu/about/contact/">Site Info</a> &middot; <a href="http://www.vanderbilt.edu/apps">
+                    Go Mobile</a> &middot; More information? Contact <a href="https://virg.vanderbilt.edu/virgweb/default.aspx">
+                        Vanderbilt Institutional Research Group</a></p>
+                       <div style="float:right"><a href="https://virg.vanderbilt.edu" style="color:#999999;text-decoration:none;">Powered by <img src="images/virgsmall.gif" /></a></div>
+        </div>
+    </div>
+    <!-- /footer -->
+    <!-- Patricia, this is Google Analytics code -->
+
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2095171-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+    </script>
+
+    <!-- end of Google Analytics code -->
+    </form>
+</body>
+</html>
